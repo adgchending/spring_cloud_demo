@@ -1,0 +1,6 @@
+cn\itbluebox\product\entity\Product.class
+cn\itbluebox\product\service\impl\ProductServiceImpl.class
+cn\itbluebox\product\dao\ProductDao.class
+cn\itbluebox\product\ProductApplication.class
+cn\itbluebox\product\controller\ProductController.class
+cn\itbluebox\product\service\ProductService.class
