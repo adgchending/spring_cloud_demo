@@ -1,0 +1,12 @@
+server:
+  port: 9003 #端口
+#配置Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/,http://localhost:8000/eureka/
+  instance:
+    prefer-ip-address: true #使用ip地址注册
+    instance-id: ${spring.cloud.client.ip-address}:${server.port} #向组成中心注册服务ID
+    lease-renewal-interval-in-seconds: 5 #向注册中心中注册服务id
+    lease-expiration-duration-in-seconds: 10 #续约到期的时间

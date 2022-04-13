@@ -1,4 +1,4 @@
-cn\itbluebox\order\feign\ProductFeignClient.class
-cn\itbluebox\order\entity\Product.class
+cn\itbluebox\order\feign\BasicSchoolInfortFeignClient.class
+cn\itbluebox\order\entity\BasicSchoolInfor.class
 cn\itbluebox\order\OrderApplication.class
 cn\itbluebox\order\controller\OrderController.class
