@@ -3,6 +3,7 @@ package cn.itbluebox.order.controller;
 import cn.itbluebox.common.vo.ResultVo;
 import cn.itbluebox.order.entity.BasicSchoolInfor;
 import cn.itbluebox.order.feign.BasicSchoolInfortFeignClient;
+import cn.itbluebox.order.entity.TbProduct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,10 +14,16 @@ public class OrderController {
     @Autowired
     private BasicSchoolInfortFeignClient feignClient;
 
-    @RequestMapping(value = "/select", method = RequestMethod.GET)
-    public ResultVo findById(@RequestParam Long id) {
+    @RequestMapping(value = "/findById", method = RequestMethod.GET)
+    public TbProduct findById(@RequestParam Long id) {
         //如何调用商品服务?
         return feignClient.findById(id);
+    }
+
+    @RequestMapping(value = "/select", method = RequestMethod.GET)
+    public ResultVo select(@RequestParam Long id) {
+        //如何调用商品服务?
+        return feignClient.select(id);
     }
 
     @RequestMapping(value = "/insert", method = RequestMethod.POST)

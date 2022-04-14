@@ -2,13 +2,14 @@ package cn.itbluebox.product.service;
 
 import cn.itbluebox.common.vo.ResultVo;
 import cn.itbluebox.product.entity.BasicSchoolInfor;
+import cn.itbluebox.product.entity.TbProduct;
 
 public interface BasicSchoolInforService {
 
     /*
     根据id查询
      */
-    ResultVo findByID(Long id);
+    ResultVo selectById(Long id);
     /*
     保存
      */
@@ -22,5 +23,6 @@ public interface BasicSchoolInforService {
      */
     void delete(Long id);
 
+    TbProduct findById(Long id);
 }
 

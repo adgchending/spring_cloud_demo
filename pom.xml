@@ -48,6 +48,22 @@
             <scope>provided</scope>
         </dependency>
 
+        <!-- swagger2依赖 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.da.coin</groupId>
+            <artifactId>semantic-execute-meta</artifactId>
+            <version>1.1.18-REALEASE</version>
+        </dependency>
 
 
         <dependency>
@@ -120,12 +136,4 @@
         </pluginRepository>
     </pluginRepositories>
 
-<!--    <build>-->
-<!--        <plugins>-->
-<!--            <plugin>-->
-<!--                <groupId>org.springframework.boot</groupId>-->
-<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
-<!--            </plugin>-->
-<!--        </plugins>-->
-<!--    </build>-->
 </project>

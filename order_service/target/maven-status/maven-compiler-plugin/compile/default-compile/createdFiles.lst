@@ -1,3 +1,4 @@
+cn\itbluebox\order\entity\TbProduct.class
 cn\itbluebox\order\feign\BasicSchoolInfortFeignClient.class
 cn\itbluebox\order\entity\BasicSchoolInfor.class
 cn\itbluebox\order\OrderApplication.class

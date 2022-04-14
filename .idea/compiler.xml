@@ -22,7 +22,7 @@
       <module name="eureka_server" options="-parameters" />
       <module name="import_test" options="-parameters" />
       <module name="order_service" options="-parameters" />
-      <module name="product_service" options="-parameters" />
+      <module name="product_service" options="-parameters -extdirs E:\ZW\spring_cloud_demo\product_service/lib" />
     </option>
   </component>
 </project>

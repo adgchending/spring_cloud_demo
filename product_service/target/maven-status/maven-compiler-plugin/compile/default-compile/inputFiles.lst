@@ -4,5 +4,7 @@ E:\ZW\spring_cloud_demo\product_service\src\main\java\cn\itbluebox\product\Produ
 E:\ZW\spring_cloud_demo\product_service\src\main\java\cn\itbluebox\product\service\impl\BasicSchoolInforServiceImpl.java
 E:\ZW\spring_cloud_demo\product_service\src\main\java\cn\itbluebox\product\common\swagger\SwaggerConfig.java
 E:\ZW\spring_cloud_demo\product_service\src\main\java\cn\itbluebox\product\controller\BasicSchoolInforController.java
+E:\ZW\spring_cloud_demo\product_service\src\main\java\cn\itbluebox\product\dao\ProductDao.java
 E:\ZW\spring_cloud_demo\product_service\src\main\java\cn\itbluebox\product\common\Aspect\Aop.java
+E:\ZW\spring_cloud_demo\product_service\src\main\java\cn\itbluebox\product\entity\Product.java
 E:\ZW\spring_cloud_demo\product_service\src\main\java\cn\itbluebox\product\dao\BasicSchoolInforDao.java

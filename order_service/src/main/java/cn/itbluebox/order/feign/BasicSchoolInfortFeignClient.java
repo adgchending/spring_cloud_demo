@@ -2,6 +2,7 @@ package cn.itbluebox.order.feign;
 
 import cn.itbluebox.common.vo.ResultVo;
 import cn.itbluebox.order.entity.BasicSchoolInfor;
+import cn.itbluebox.order.entity.TbProduct;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,8 +19,12 @@ public interface BasicSchoolInfortFeignClient {
     配置需要调用的微服务接口
     这里消费者的url需要和服务者的保持一致
      */
+
+    @RequestMapping(value = "/product/findById", method = RequestMethod.GET)
+    TbProduct findById(@RequestParam Long id);
+
     @RequestMapping(value = "/product/select", method = RequestMethod.GET)
-    ResultVo findById(@RequestParam Long id);
+    ResultVo select(@RequestParam Long id);
 
     @RequestMapping(value = "/product/insert", method = RequestMethod.POST)
     String save(BasicSchoolInfor product);
@@ -29,4 +34,6 @@ public interface BasicSchoolInfortFeignClient {
 
     @RequestMapping(value = "/product/delete", method = RequestMethod.GET)
     void delete(@RequestParam Long id);
+
+
 }
