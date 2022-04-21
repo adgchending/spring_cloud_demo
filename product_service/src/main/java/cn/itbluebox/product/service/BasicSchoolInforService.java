@@ -1,8 +1,8 @@
 package cn.itbluebox.product.service;
 
 import cn.itbluebox.common.vo.ResultVo;
-import cn.itbluebox.product.entity.BasicSchoolInfor;
-import cn.itbluebox.product.entity.TbProduct;
+import cn.itbluebox.product.pojo.BasicSchoolInfor;
+import cn.itbluebox.product.pojo.TbProduct;
 
 public interface BasicSchoolInforService {
 

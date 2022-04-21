@@ -1,8 +1,8 @@
 package cn.itbluebox.product.controller;
 
 import cn.itbluebox.common.vo.ResultVo;
-import cn.itbluebox.product.entity.BasicSchoolInfor;
-import cn.itbluebox.product.entity.TbProduct;
+import cn.itbluebox.product.pojo.BasicSchoolInfor;
+import cn.itbluebox.product.pojo.TbProduct;
 import cn.itbluebox.product.service.BasicSchoolInforService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -29,7 +29,7 @@ public class BasicSchoolInforController {
     @RequestMapping(value = "/findById", method = RequestMethod.GET)
     public TbProduct findById(@RequestParam Long id) {
 //        try {
-//            Thread.sleep(2000l);
+//            Thread.sleep(2000);
 //        } catch (InterruptedException e) {
 //            e.printStackTrace();
 //        }

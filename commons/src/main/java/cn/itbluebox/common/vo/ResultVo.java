@@ -62,7 +62,7 @@ public class ResultVo<T> {
     /**
      * 无参构造器
      */
-    private ResultVo() {
+    public ResultVo() {
 
     }
 

@@ -1,0 +1,4 @@
+cn\itbluebox\OtherApplication.class
+cn\itbluebox\Config\SecurityConfig.class
+cn\itbluebox\service\UserDetailsServiceImpl.class
+cn\itbluebox\controller\LoginController.class

@@ -1,8 +1,9 @@
 cn\itbluebox\product\service\impl\BasicSchoolInforServiceImpl.class
 cn\itbluebox\product\dao\BasicSchoolInforDao.class
+cn\itbluebox\common\swagger\SwaggerConfig.class
 cn\itbluebox\product\dao\ProductDao.class
 cn\itbluebox\product\service\BasicSchoolInforService.class
-cn\itbluebox\product\ProductApplication.class
 cn\itbluebox\product\entity\BasicSchoolInfor.class
-cn\itbluebox\product\common\swagger\SwaggerConfig.class
+cn\itbluebox\product\controller\BasicSchoolInforController.class
 cn\itbluebox\product\entity\TbProduct.class
+cn\itbluebox\ProductApplication.class

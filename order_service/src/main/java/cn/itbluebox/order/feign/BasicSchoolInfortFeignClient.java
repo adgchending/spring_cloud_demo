@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RequestParam;
  * ProductFeignClient上声明需要调用的微服务名称
  * @FeignClient
  *      name: 服务提供者的名称
+ *      fallback : 配置熔断发生降级方法
  */
-@FeignClient(name = "service-product")
+@FeignClient(name = "service-product",fallback = ProductFeignClientCallBack.class)
 public interface BasicSchoolInfortFeignClient {
     /*
     配置需要调用的微服务接口

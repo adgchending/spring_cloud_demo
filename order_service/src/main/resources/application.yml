@@ -6,8 +6,8 @@ spring:
   application:
     name: service-order #服务名称
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/springcloud?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springcloud?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
     password: root
   jpa:
@@ -18,8 +18,26 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:9000/eureka/,http://localhost:8000/eureka/
+      #      defaultZone: http://localhost:9000/eureka/,http://localhost:8000/eureka/
+      defaultZone: http://localhost:9000/eureka/
   instance:
     prefer-ip-address: true #使用ip地址注册
+feign:
+  client:
+    config:
+      default:
+        #建立连接所用的时间，适用于网络状况正常的情况下，两端连接所需要的时间
+        ConnectTimeOut: 30000
+        #指建立连接后从服务端读取到可用资源所用的时间
+        ReadTimeOut: 30000
+  hystrix: #在feign中开启hystrix熔断
+    enabled: true
+    command:
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 5000  #默认的连接的超时时间是1秒，若1秒没有返回数据，会自动触发降级逻辑,这里设置的是3秒
+
 
 

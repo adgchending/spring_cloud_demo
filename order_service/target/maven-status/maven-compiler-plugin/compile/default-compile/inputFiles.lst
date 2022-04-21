@@ -2,4 +2,6 @@ E:\ZW\spring_cloud_demo\order_service\src\main\java\cn\itbluebox\order\OrderAppl
 E:\ZW\spring_cloud_demo\order_service\src\main\java\cn\itbluebox\order\controller\OrderController.java
 E:\ZW\spring_cloud_demo\order_service\src\main\java\cn\itbluebox\order\entity\TbProduct.java
 E:\ZW\spring_cloud_demo\order_service\src\main\java\cn\itbluebox\order\feign\BasicSchoolInfortFeignClient.java
+E:\ZW\spring_cloud_demo\order_service\src\main\java\cn\itbluebox\order\feign\ProductFeignClientCallBack.java
+E:\ZW\spring_cloud_demo\order_service\src\main\java\cn\itbluebox\order\command\OrderCommand.java
 E:\ZW\spring_cloud_demo\order_service\src\main\java\cn\itbluebox\order\entity\BasicSchoolInfor.java

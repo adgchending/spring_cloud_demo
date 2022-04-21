@@ -12,7 +12,8 @@
         <module>product_service</module><!--服务者,写业务代码-->
         <module>order_service</module><!--消费者,远程调用服务者-->
         <module>eureka_server</module><!--注册中心-->
-        <module>commons</module><!--共用包-->
+        <module>commons</module>
+        <module>oauth_service</module><!--共用包-->
     </modules>
 
     <parent>
